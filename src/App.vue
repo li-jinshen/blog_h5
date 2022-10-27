@@ -23,8 +23,8 @@
 		methods: {
 			initSystem() {
 				// 状态栏高度
-				this.globalData.statusBarHeight = uni.getSystemInfoSync().statusBarHeight
 				const e = uni.getSystemInfoSync();
+				this.globalData.statusBarHeight = e.statusBarHeight
 				let navBarHeight = 45
 				// #ifdef MP-WEIXIN
 				//获取胶囊位置信息
@@ -33,8 +33,7 @@
 				navBarHeight = menuBottonInfo.bottom - e.statusBarHeight + (menuBottonInfo.top - e.statusBarHeight);
 				// #endif
 				this.globalData.navBarHeight = navBarHeight // 导航栏高度
-					
-				this.globalData.screenHeight = uni.getSystemInfoSync().screenHeight // 页面高度
+				this.globalData.screenHeight = e.safeArea.height // 页面高度
 			},
 			// 有关分享的处理
 			// shareDealFunction() {

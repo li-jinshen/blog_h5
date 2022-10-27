@@ -4,13 +4,14 @@
 import baseUrl from "./url.js";
 
 // 客服页相关图片
-export const customerserviceImages = {
-	// arrow_right: baseUrl + "/static/customerservice/arrow_right.png",
-	// greenphone: baseUrl + "/static/customerservice/greenphone.png",
-	// qrcode: baseUrl + "/static/customerservice/qrcode.png",
-	// business: baseUrl + "/static/customerservice/business.png",
-	// bigbusiness: baseUrl + "/static/customerservice/details/bigbusiness.png",
+export const splashImages = {
+	yun: baseUrl + "/static/splash/yun.png",
+	yan: baseUrl + "/static/splash/yan.png",
+	shen: baseUrl + "/static/splash/shen.png",
+	chu: baseUrl + "/static/splash/chu.png",
 };
+
+
 
 // chatting 聊天页面的图片
 export const chattingImage = {
@@ -35,7 +36,7 @@ export const chattingImage = {
 	icon2: baseUrl + "/static/chatting/icon2.png",
 	icon3: baseUrl + "/static/chatting/icon3.png",
 	icon4: baseUrl + "/static/chatting/icon4.png",
-	
+
 	collection: baseUrl + "/static/chatting/collection.png",
 }
 

@@ -111,7 +111,7 @@
 			this.navBarHeight = getApp().globalData.navBarHeight
 			this.statusBarHeight = getApp().globalData.statusBarHeight
 			let e = uni.getSystemInfoSync()
-			this.baseHeight = e.screenHeight - this.statusBarHeight - this.navBarHeight
+			this.baseHeight = e.safeArea.height - this.statusBarHeight - this.navBarHeight
 			this.isOs = this.$u.os() == 'ios'
 			uni.onKeyboardHeightChange(res => {
 				this.calculatePageHeight(res.height)
@@ -193,15 +193,15 @@
 			},
 			calculatePageHeight(keyboardHeight) {
 				let e = uni.getSystemInfoSync()
-				this.pageHeight = e.screenHeight - keyboardHeight
+				this.pageHeight = e.safeArea.height - keyboardHeight
 			},
 			openMenu(type) {
 				this.isAnimation = true
 				let oldMenuType = this.menuType
 				this.menuType = type
-				if(oldMenuType == type){
-					this.isShow = !this.isShow 
-				}else{
+				if (oldMenuType == type) {
+					this.isShow = !this.isShow
+				} else {
 					this.isShow = true
 					this.calculateScrollHeight('menu', 0, 0)
 				}

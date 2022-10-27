@@ -1,5 +1,5 @@
-# uniapp_framework
-> uni-app项目模板
+#  blog_h5
+> 博客h5端
 > uview2.0 +  tailwind.css
 
 ## Project setup

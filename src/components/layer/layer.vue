@@ -5,8 +5,8 @@
 
 			<view class="title flex flex-row   justify-center items-center relative"
 				:style="{'height':navBarHeight+'px','color':color}">
-				<view v-if="showBack" class="h-full flex flex-row justify-center items-center"
-					style="width: 80rpx;" @click="goback">
+				<view v-if="showBack" class="h-full flex flex-row justify-center items-center" style="width: 80rpx;"
+					@click="goback">
 					<u-icon name="arrow-left" size="40" :color='iconColor'></u-icon>
 				</view>
 				<view class="title_font title_desc" style="flex:1;padding: 0rpx 0rpx;"
@@ -140,7 +140,7 @@
 			},
 			contentHeight() {
 				const e = uni.getSystemInfoSync();
-				const height = e.screenHeight
+				const height = e.safeArea.height
 				let navBarHeight = 45
 				// #ifdef MP-WEIXIN
 				//获取胶囊位置信息
@@ -156,7 +156,7 @@
 			},
 			contentHeight2() {
 				const e = uni.getSystemInfoSync();
-				const height = e.screenHeight
+				const height = e.safeArea.height
 				let navBarHeight = 45
 				// #ifdef MP-WEIXIN
 				//获取胶囊位置信息
