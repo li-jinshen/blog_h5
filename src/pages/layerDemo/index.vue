@@ -6,7 +6,7 @@
 		-->
 		<template slot='content'>
 			<view class="padding_box">
-				<view class="" v-for="item in 40">
+				<view class="" v-for="item in 40" :key='item'>
 					{{item}}
 				</view>
 			</view>

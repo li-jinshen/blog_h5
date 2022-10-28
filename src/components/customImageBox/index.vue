@@ -1,6 +1,6 @@
 <template>
 	<view class="relative" :class="[roundedClass]" :style="{borderRadius:borderRadius,height:height,width:width}"
-		style="overflow: hidden;">
+		style="overflow: hidden;" :bgColor='bgColor'>
 		<custom-loading v-if="status == 'loading'" :bgColor='bgColor'></custom-loading>
 		<image :src="src" :mode="mode" :style="{width:imageWeight,height:imageHeight}" @load='loadFunc'
 			@error='errorFunc' @click="previewImage"></image>

@@ -9,6 +9,7 @@ export const splashImages = {
 	yan: baseUrl + "/static/splash/yan.png",
 	shen: baseUrl + "/static/splash/shen.png",
 	chu: baseUrl + "/static/splash/chu.png",
+	bg: baseUrl + "/static/splash/bg.png",
 };
 
 

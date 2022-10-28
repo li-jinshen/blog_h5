@@ -67,7 +67,7 @@
 					// 字体颜色
 					color: '#666666',
 					// 激活字体颜色
-					activeColor: '#333333',
+					activeColor: '#7593B8',
 					// item宽度 0为自动
 					itemWidth: 0,
 					// 下划线左右边距，文字宽度加边距 rpx
@@ -77,7 +77,7 @@
 					// 下划线高度 rpx
 					underLineHeight: 6,
 					// 下划线颜色
-					underLineColor: '#E11E56',
+					underLineColor: '#7593B8',
 				},
 			};
 		},

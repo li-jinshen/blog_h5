@@ -80,3 +80,13 @@ $uni-font-size-paragraph:30rpx;
 	padding-left: $uni-spacing-row-lg;
 	padding-right: $uni-spacing-row-lg;
 }
+
+.content_desc {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
