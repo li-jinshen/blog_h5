@@ -1,20 +1,19 @@
 <template>
 	<view>
-		<view class="">
+		<view class="border_bottom">
 			<view class="w-full " :style="{height:statusBarHeight + 'px'}">
 
 			</view>
 			<view class="w-full  padding_box title_font flex items-center border_bottom font-bold"
 				:style="{height:navBarHeight + 'px'}">
-				<!-- {{i18n.mall}} -->
 				工具
 			</view>
 		</view>
 		<view class="flex items-center " style="height: 80rpx;">
-			<custom-tabs :tabData="list" :activeIndex="current" @tabClick='tabClick'></custom-tabs>
+			<custom-tabs :tabData="list" :activeIndex="current" @tabClick='tabClick' ref='tabs'></custom-tabs>
 		</view>
-		<swiper class="swiper" :autoplay="false" :style="{height:contentHeight + 'px'}">
-			<swiper-item v-for="swiper in list" :key='swiper._id' :current='current'>
+		<swiper class="swiper" :autoplay="false" :style="{height:contentHeight + 'px'}" @change='change' :current='current'>
+			<swiper-item v-for="swiper in list" :key='swiper._id'  >
 				<scroll-view scroll-y="true" :style="{height:contentHeight + 'px'}" class="bg-gray-100">
 					<view>
 						<view class="">
@@ -75,6 +74,10 @@
 			Square
 		},
 		methods: {
+			change(e){
+				this.$refs.tabs.tabClick(e.detail.current)
+				// this.tabClick(e.detail.current)
+			},
 			tabClick(e) {
 				this.current = e
 				this.cateId = this.list[this.current]._id

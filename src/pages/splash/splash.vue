@@ -21,6 +21,7 @@
 		data() {
 			return {
 				splashImages,
+
 			}
 		}
 	}

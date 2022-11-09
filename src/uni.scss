@@ -16,7 +16,7 @@
 /* 颜色变量 */
 
 /* 行为相关颜色 */
-$uni-color-primary: #dd524d;
+$uni-color-primary: #7593B8;
 $uni-color-success: #4cd964;
 $uni-color-warning: #f0ad4e;
 $uni-color-error: #dd524d;
@@ -76,11 +76,30 @@ $uni-font-size-subtitle:36rpx;
 $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:30rpx;
 
+$uni-color-border:#EDECED;
+
 .padding_box {
 	padding-left: $uni-spacing-row-lg;
 	padding-right: $uni-spacing-row-lg;
 }
-
+.title_desc{
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.intro_desc {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
 .content_desc {
 	text-overflow: -o-ellipsis-lastline;
 	overflow: hidden;
@@ -89,4 +108,8 @@ $uni-font-size-paragraph:30rpx;
 	-webkit-line-clamp: 4;
 	line-clamp: 4;
 	-webkit-box-orient: vertical;
+}
+
+.border_bottom {
+	border-bottom: 2rpx solid $uni-color-border;
 }

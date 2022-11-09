@@ -233,7 +233,7 @@ module.exports = {
     }),
     extend: {
       colors: {
-        primary: "#dd524d",
+        primary: "#7593B8",
         fontcolor: "#74767F",
         blanklight: "#333333",
         basecolor: "#666666",
