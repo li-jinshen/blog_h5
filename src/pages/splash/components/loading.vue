@@ -30,13 +30,13 @@
 	.loading>view {
 		display: inline-block;
 		float: none;
-		background-color: currentColor;
-		border: 0 solid currentColor;
+		background-color: #7593B8;
+		border: 0 solid #7593B8;
 	}
 
 	.loading {
-		width: 32px;
-		height: 32px;
+		width: 80px;
+		height: 80px;
 	}
 
 	.loading>view:nth-child(1),

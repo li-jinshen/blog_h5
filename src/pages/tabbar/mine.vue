@@ -30,7 +30,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="px-8" style="padding-top: 180rpx;">
+		<view class="px-8" style="padding-top: 160rpx;">
 			<view class="bg-white rounded  mt-4 p-4 flex justify-center"
 				style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);">
 				<view class="text-gray-500 text-sm">

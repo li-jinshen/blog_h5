@@ -10,6 +10,11 @@
 		onLaunch: function() {
 			this.initSystem()
 			console.log('App Launch')
+			setTimeout(()=>{
+				uni.switchTab({
+					url:'/pages/tabbar/blog'
+				})
+			},2000)
 		},
 		onShow: function() {
 			console.log('App Show')

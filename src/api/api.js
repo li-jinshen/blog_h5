@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'development') {
 } else {
 	// console.log('生产环境')
 	// baseUrl = "https://www.incaicloud.com"
-	baseUrl = 'https://lijinshen.cn'
+	baseUrl = 'https://lijinshen.cn/api'
 }
 
 export default {
